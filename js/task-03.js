@@ -30,9 +30,9 @@ galleryEl.style.display = "flex";
 galleryEl.style.justifyContent = "space-around";
 galleryEl.style.listStyleType = "none";
 
-const makeImage = images.map(({ url, alt }) => {
+const makeGallery = images.map(({ url, alt }) => {
 
   return `<li><img class = "img" width = "200px" src = "${url}" alt = ${alt}></img></li>`;
 
 }).join('');
-galleryEl.insertAdjacentHTML('afterbegin', makeImage);
+galleryEl.insertAdjacentHTML('afterbegin', makeGallery);
