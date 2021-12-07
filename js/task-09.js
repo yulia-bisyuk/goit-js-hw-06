@@ -12,8 +12,9 @@ function getRandomHexColor() {
 function onChangeColor(event) {
   const currentColor = getRandomHexColor();
   bodyEl.style.backgroundColor = currentColor;
-  textEl.textContent = currentColor;
+  textEl.textContent = bodyEl.style.backgroundColor;
 }
+
 
 
 

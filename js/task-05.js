@@ -10,6 +10,6 @@ function onNameInput(event) {
 
     event.currentTarget.value === ''
         ? refs.nameOutput.textContent = 'Anonymous'
-        : refs.nameOutput.textContent = event.currentTarget.value;
+        : refs.nameOutput.textContent = event.currentTarget.value.trim();
 
 }

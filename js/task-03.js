@@ -32,7 +32,9 @@ galleryEl.style.listStyleType = "none";
 
 const makeGallery = images.map(({ url, alt }) => {
 
-  return `<li><img class = "img" width = "200px" src = "${url}" alt = ${alt}></img></li>`;
+  return `<li><img width = "200px" src = "${url}" alt = "${alt}"></li>`;
 
 }).join('');
 galleryEl.insertAdjacentHTML('afterbegin', makeGallery);
+
+
