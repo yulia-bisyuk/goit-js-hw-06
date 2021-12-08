@@ -17,5 +17,6 @@ function onInputBlur(event) {
         inputEl.classList.remove('valid');
         
     }
+    
 }
 
